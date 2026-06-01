@@ -58,8 +58,11 @@ python -m sample_cli greet --name "Git" --shout
 
 ## Лицензия
 
-MIT — см. [LICENSE](LICENSE).
+GPLv3 — см. [LICENSE](LICENSE).
 
 ## TODO
 - [x] Выполнить пуш в это репо Day2
 - [ ] Пройти задание Day3
+
+### Важно
+репозиторий учебный, автору курса большой привет, этот блок мне понравился
