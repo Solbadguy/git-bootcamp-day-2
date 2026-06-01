@@ -1,0 +1,42 @@
+[user]
+        email = solbadguy@linux.org
+        name = Solbadguy
+
+[init]
+       # Новые репозитории будут создаваться с веткой main
+        defaultBranch = main
+
+
+[core]
+        editor = nano
+      # Не конвертировать переносы строк автоматически (для macOS/Linux)
+        autocrlf = input
+      # Не обрезать вывод в pager
+        pager = less -FX
+        excludesFile = /home/solbadguy/.gitignore_global
+
+[pull]
+      # При git pull использовать rebase а не merge
+      # Это держит историю чистой — обсудим подробно в теме про ветки
+#        rebase = true
+
+[push]
+      # git push без аргументов пушит текущую ветку в одноимённую на remote
+        default = current
+      # Автоматически создавать tracking-связь при первом push
+        autoSetupRemote = true
+
+[alias]
+        st = status
+        co = checkout
+        br = branch
+        lg = log --oneline --graph --all --decorate
+        last = log -1 HEAD --stat
+        undo = reset HEAD~1 --mixed
+        aliases = config --get-regexp alias
+        brd = branch --sort=-committerdate
+        cam = commit -am
+
+[color]
+      # Цветной вывод — обычно включён по умолчанию, но явно лучше
+        ui = auto
