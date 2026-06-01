@@ -98,11 +98,13 @@ GNU GPLv3
 
 <details>
 <summary>Пример сворачиваемого блока</summary>
-ping 1.1.1.1      
+```bash
+ping 1.1.1.1
 PING 1.1.1.1 (1.1.1.1) 56(84) bytes of data.
 64 bytes from 1.1.1.1: icmp_seq=1 ttl=59 time=13.7 ms
 64 bytes from 1.1.1.1: icmp_seq=2 ttl=59 time=13.4 ms
 64 bytes from 1.1.1.1: icmp_seq=3 ttl=59 time=13.4 ms
+```
 </details>
 
 ## Финальный пуш
